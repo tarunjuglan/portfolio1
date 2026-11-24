@@ -74,7 +74,7 @@ footer{text-align:center;padding:36px;color:var(--muted);border-top:1px solid va
 <body class="fx">
 <header>
   <a href="#home"><b class="accent">AJ</b> &lt;_</a>
-  <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#creds">Credentials</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#creds">Credentials</a><a href="#projects">Projects</a><a href="#practice">Practice</a><a href="#contact">Contact</a></nav>
   <div class="ctl">
     <button data-t="amber"><span class="dot" style="background:#ffb020"></span>Amber</button>
     <button data-t="cyan"><span class="dot" style="background:#22d3ee"></span>Cyan</button>
@@ -101,23 +101,16 @@ footer{text-align:center;padding:36px;color:var(--muted);border-top:1px solid va
 <b>Study</b>    B.Tech Cyber Security (2027)
 <b>College</b>  VMSB Uttarakhand Technical Univ.
 <b>City</b>     Dehradun, India
-<b>Lab</b>      TryHackMe, 54 rooms, 14 badges
-<b>Path</b>     Pre Security (done 20 Nov 2026)
+<b>Focus</b>    Security basics, Linux, networking
 <b>Web</b>      HTML, CSS, JavaScript
 <b>Status</b>   <b>●</b> open to internships</pre>
     </div>
-  </div>
-  <div class="stats">
-    <div><b>54</b><span class="muted">TryHackMe rooms</span></div>
-    <div><b>14</b><span class="muted">badges</span></div>
-    <div><b>1</b><span class="muted">learning path done</span></div>
-    <div><b>2024</b><span class="muted">started B.Tech</span></div>
   </div>
 </section>
 
 <section id="about">
   <h2>What I’m learning</h2>
-  <p class="lead">I learn by doing. Most days I work through a TryHackMe room, then write down what I learned.</p>
+  <p class="lead">I learn by doing, with hands-on labs and small projects.</p>
   <div class="grid">
     <div class="card"><h3>Security basics</h3><p class="muted">CIA triad, risks and threats, access control, and how attackers think.</p></div>
     <div class="card"><h3>Networking</h3><p class="muted">How data moves, common protocols and how to read traffic.</p></div>
@@ -156,6 +149,16 @@ footer{text-align:center;padding:36px;color:var(--muted);border-top:1px solid va
   <p class="lead">Honest status. Each one goes on GitHub when it’s finished.</p>
   <div class="filters" id="filters"></div>
   <div class="grid" id="pgrid"></div>
+</section>
+
+<section id="practice">
+  <h2>Hands-on practice</h2>
+  <p class="lead">I practise security skills in lab environments on TryHackMe.</p>
+  <div class="grid">
+    <div class="card"><h3>54 rooms completed</h3><p class="muted">Labs on networking, Linux, web basics, OSINT and password security.</p></div>
+    <div class="card"><h3>Pre Security path</h3><p class="muted">Completed 20 November 2026 (19 h 10 min).</p><a class="btn" href="https://tryhackme.com/certificate/THM-MP3X4CJHIJ" target="_blank" rel="noopener">Verify certificate</a></div>
+    <div class="card"><h3>14 badges</h3><p class="muted">Earned across rooms and streaks.</p><a class="btn" href="https://tryhackme.com/p/juglantarun" target="_blank" rel="noopener">View profile</a></div>
+  </div>
 </section>
 
 <section id="contact">
@@ -209,7 +212,7 @@ function decrypt(el){
 decrypt($("#name")); $("#name").onmouseenter = () => decrypt($("#name"));
 
 // Typing effect
-const words = ["by building.", "on TryHackMe.", "one room at a time."];
+const words = ["security fundamentals.", "Linux and networking.", "by building projects."];
 let w = 0, c = 0, del = false;
 (function type(){
   const word = words[w];
